@@ -57,7 +57,7 @@ public class LoginServlet extends HttpServlet {
 
         if ( username == null || username.equals("") || password == null || password.equals("") ) {
             
-            user = user.login(username, password);
+            user = as.login(username, password);
             
             if ( user != null ) {
                 
